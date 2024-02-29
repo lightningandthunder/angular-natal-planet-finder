@@ -1,0 +1,25 @@
+# Angular Natal Planet Finder, a Rust CLI application to find places 
+# where natal planets are foreground in some sidereal context.
+# Copyright (C) 2024 Mike Verducci
+
+[package]
+name = "angular-natal-planet-finder"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lints.rust]
+unused = "allow"
+
+[dependencies]
+anyhow = "1.0.75"
+chrono = "0.4.34"
+chrono-tz = "0.8.4"
+console = "0.15.8"
+dialoguer = "0.11.0"
+dotenv = "0.15.0"
+libc = "0.2"
+tzf-rs = "0.4.5"
+swiss-ephemeris-lib = { path = "../../projects/swiss-ephemeris-lib" }
+# swiss-ephemeris-lib = { git = "https://github.com/lightningandthunder/swiss-ephemeris-lib.git", branch = "mistress" }
