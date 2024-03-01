@@ -167,8 +167,8 @@ fn get_natal_precession_input() -> anyhow::Result<Option<InputConfig>, Box<dyn s
 
     // Select orb
     let orb_raw: String = Input::with_theme(&theme)
-        .with_prompt("Please enter the orb to allow for angular planets, e.g. 1 or 2.5")
-        .default("3.0".to_string())
+        .with_prompt("Please enter the orb (in degrees) to allow for angular planets, e.g. 1 or 2.5")
+        .default("1.0".to_string())
         .interact()?;
 
     let orb: f64 = orb_raw.parse().unwrap();
