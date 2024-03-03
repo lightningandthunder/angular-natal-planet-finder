@@ -1,0 +1,6 @@
+/target
+/Cargo.lock
+.env
+output/*
+dist
+*.zip
